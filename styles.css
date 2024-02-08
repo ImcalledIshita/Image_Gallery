@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search
+{
+    background-image: url('images/background.png');
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-box
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    margin-top: 40px;
+}
+
+input
+{
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 48px;
+    font-size: 1rem;
+}
+
+.search-box i
+{
+ color: #8d8d8d;   
+ position: relative;
+ left: 40px;
+ top: 50%;
+ padding-top: 15px;
+ font-size: 1.3rem;
+ transform: translateY(-40%);
+}
+
+.search .container
+{
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+
+h1
+{
+    font-size: 5rem;
+}
+
+p
+{
+    font-size: 1.5rem;
+}
+
+.gallery
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gallery .pictures
+{
+    gap:15px;
+    columns: 5 340px;
+    margin-top: 20px;
+}
+
+.gallery img
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pictures .card
+{
+    display: flex;
+    list-style: none;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery .load-more
+{
+    margin: 50px 0;
+    /* margin-left: 30%; */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 12px 27px;
+    background-color: #492E87;
+}
+
+.pictures .card .details
+{
+    position: absolute;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: -100px;
+    transition: bottom 0.2s ease;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.pictures .card:hover .details
+{
+    bottom: 0;
+}
+
+.card .details .photographer
+{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.card .details i
+{
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+.details .photographer span
+{
+    font-size: 1.05rem;
+}
+
+.card .details button
+{
+    padding: 3px 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+
+.card .details 
+{
+}
