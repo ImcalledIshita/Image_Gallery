@@ -6,8 +6,26 @@
     <title>Image Gallery | IshitaChoudhury</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span>Ana Marta Jorge</span>
+                </div>
+                <div class="buttons">
+                    <i class="uil uil-import"></i>
+                    <i class="uil uil-times"></i>
+                </div>
+            </header>
+            <div class="preview-img">
+                <div class="img"><img src="images/1.jpg" alt="img"></div>
+            </div>
+        </div>
+    </div>
     <section class="search">
         <div class="container">
             <h1>Image Gallery</h1>
@@ -19,29 +37,8 @@
         </div>
     </section>
     <section class="gallery">
-        <ul class="pictures">
-            <li class="card">
-                <img src="images/1.jpg" alt="img">
-                <div class="details">
-                    <div class="photographer">
-                        <i class="uil uil-camera"></i>
-                        <span>Ana Marta Jorge</span>
-                    </div>
-                    <button class="uil uil-import"></button>
-                </div>
-            </li>
-            <li class="card"><img src="images/2.jpg" alt="img"></li>
-            <li class="card"><img src="images/3.jpg" alt="img"></li>
-            <li class="card"><img src="images/4.jpg" alt="img"></li>
-            <li class="card"><img src="images/5.jpg" alt="img"></li>
-            <li class="card"><img src="images/6.jpg" alt="img"></li>
-            <li class="card"><img src="images/7.jpg" alt="img"></li>
-            <li class="card"><img src="images/8.jpg" alt="img"></li>
-            <li class="card"><img src="images/9.jpg" alt="img"></li>
-            <li class="card"><img src="images/10.jpg" alt="img"></li>
-        </ul>
+        <ul class="pictures"></ul>
         <button class="load-more">Load More</button>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
